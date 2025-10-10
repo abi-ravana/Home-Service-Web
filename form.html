@@ -1,0 +1,84 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request Form - Phoenix House Service</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1 class="header-logo">PHOENIX</h1>
+        <h1>Service Booking Request</h1>
+        <p>Please fill out the details below to schedule your house service.</p>
+        
+        <form id="serviceRequestForm">
+            
+            <fieldset>
+                <legend>Customer Details</legend>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Service Address:</label>
+                    <textarea id="address" name="address" rows="2" required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Service Information</legend>
+                <div class="form-group">
+                    <label for="category">Problem Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>Select a service type</option>
+                        <option value="Plumbing">Plumbing Issues</option>
+                        <option value="Electrical">Electrical Repairs</option>
+                        <option value="AC">AC Repair</option>
+                        <option value="TV">TV Repair</option>
+                        <option value="WashingMachine">WashingMachine Repair</option>
+                        <option value="cook">Cooking</option>
+                        <option value="keeper">House Keeper</option>
+                        <option value="Other">Other (Please describe in notes)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Provide Service Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="time">Provide Service Suitable Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="note">Notes</label>
+                    <input type="text" id="note" name="note" rows="2" required>
+
+                </div>
+            </fieldset>
+
+            <button type="submit" id="submitBtn">Book Service</button>
+            
+            <p id="formStatus" class="hidden"></p>
+            
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

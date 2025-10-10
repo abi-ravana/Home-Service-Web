@@ -1,0 +1,117 @@
+
+
+
+/* Body and Typography */
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0; /* Light Gray Background */
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    height: 950px;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #ffffff; /* White Form Background */
+    border: 1px solid #333; /* Simple Dark Border */
+    padding: 20px;
+    width: 650px;
+
+    
+}
+
+/* Headers */
+.header-logo {
+    color: #000; /* Black Logo */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #004d99; /* Primary Blue for Headings */
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+/* Fieldset and Legend */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+legend {
+    color: #000; /* Black Legend */
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Inputs, Select, Textarea */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #333; /* Simple Black Border for Inputs */
+    font-size: 1em;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #004d99; /* Blue focus border */
+    outline: none;
+}
+
+/* Submit Button */
+#submitBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #004d99; /* Primary Blue Button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#submitBtn:hover {
+    background-color: #003366; /* Darker Blue on Hover */
+}
+
+/* Status Message */
+.hidden {
+    display: none;
+}
+
+#formStatus {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
